@@ -9,12 +9,11 @@ import ru.netology.geo.GeoService;
 import ru.netology.geo.GeoServiceImpl;
 
 public class GeoServiceImplTest {
-    private GeoService geoService;
     private  Location location;
     @BeforeEach
     public void setUp()
     {
-        geoService = new GeoServiceImpl();
+        GeoService geoService = new GeoServiceImpl();
         location = geoService.byIp("96.58.231.190");
     }
     @Test
